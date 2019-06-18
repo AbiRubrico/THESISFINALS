@@ -304,35 +304,35 @@
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="javascript:;" >
+                      <a class="active" href="LeasingOfficerModule_Supplies.php" >
                           <i class=" fa fa-truck"></i>
                           <span>Supplies</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="javascript:;">
+                      <a class="" href="LeasingOfficerModule_Supplies_History.php">
                           <i class="fa fa-play"></i>
                           <span>History</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="javascript:;">
+                      <a class="" href="LeasingOfficerModule_Supplies_OutOfStock.php">
                           <i class="fa fa-play"></i>
                           <span>Out Of Stock</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="javascript:;">
+                      <a class="" href="LeasingOfficerModule_Supplies_Units.php">
                           <i class="fa fa-play"></i>
                           <span>Units</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="active" href="javascript:;">
+                      <a class="" href="LeasingOfficerModule_Supplies_ItemRequest_ALRTERNATIVE.php">
                           <i class="fa fa-play"></i>
                           <span>Item Request</span>
                       </a>

@@ -22,8 +22,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
       
-      
-      
       <!--- Additional CSS Links and Scripts--->
       <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -307,35 +305,35 @@
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="active" href="LeasingOfficerModule_Supplies.html" >
+                      <a class="active" href="LeasingOfficerModule_Supplies.php" >
                           <i class=" fa fa-truck"></i>
                           <span>Supplies</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="LeasingOfficerModule_Supplies_History.html">
+                      <a class="" href="LeasingOfficerModule_Supplies_History.php">
                           <i class="fa fa-play"></i>
                           <span>History</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="LeasingOfficerModule_Supplies_OutOfStock.html">
+                      <a class="" href="LeasingOfficerModule_Supplies_OutOfStock.php">
                           <i class="fa fa-play"></i>
                           <span>Out Of Stock</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="LeasingOfficerModule_Supplies_Units.html">
+                      <a class="" href="LeasingOfficerModule_Supplies_Units.php">
                           <i class="fa fa-play"></i>
                           <span>Units</span>
                       </a>
                   </li>
                   
                   <li class="sub-menu">
-                      <a class="" href="LeasingOfficerModule_Supplies_ItemRequest_ALRTERNATIVE.html">
+                      <a class="" href="LeasingOfficerModule_Supplies_ItemRequest_ALRTERNATIVE.php">
                           <i class="fa fa-play"></i>
                           <span>Item Request</span>
                       </a>
@@ -474,10 +472,7 @@
 
     <!--script for this page-->
     <script src="assets/js/morris-conf.js"></script>
-      
-      
-      
-      
+
       <!--- Additional JavaScripts Links and Inline Codes -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -606,18 +601,18 @@
         </script>
       
       <script type="text/javascript">
-           var count = 1;
-    var countEl = document.getElementById("count");
-    function plus(){
-        count++;
-        countEl.value = count;
-    }
-    function minus(){
-      if (count > 1) {
-        count--;
-        countEl.value = count;
-      }  
-    }
+            var count = 1;
+			var countEl = document.getElementById("count");
+			function plus(){
+				count++;
+				countEl.value = count;
+			}
+			function minus(){
+			  if (count > 1) {
+				count--;
+				countEl.value = count;
+			  }  
+			}
       </script>
 
   </body>
