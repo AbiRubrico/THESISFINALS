@@ -233,60 +233,22 @@
       *********************************************************************************************************************************************************** -->
       <!--main content start-->
 
-      <!--main content end-->
-  <section id="main-content">
-          <section class="wrapper">
+		<!--main content end-->
+		<section id="main-content">
+			<section class="wrapper site-min-height">
               <br>
-              <div class="container">
-                  <button type="button" class="btn btn-secondary">All</button>
-            
-                  <button type="button" class="btn btn-secondary">Active</button>
-                  
-                  <button type="button" class="btn btn-secondary">Inactive</button>
-                  
-                  </div>
               <br>
               
               <!-- page start-->
-              <div class="container container-fluid">
-            <div class="row">
-        <div class="col-lg-12">
-                    <div class="table">
-                        <table class="table table-stripped table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Maintenance</th>
-                                    <th>Building</th>
-                                    <th>Unit</th>
-                                    <th>Tenant</th>
-                                    <th>Request Item/s</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    <td><button id="btnShowModal" type="button" class="btn btn-success btn-block" data-target="#viewModal">View</button></td>
-                                    
-                                    <!-- Code for status dropdown --> 
-                                    <!-- <div class="form-group">
-                                <select id="position" class="form-control">
-                                    <option value="0">Active</option>
-                                    <option value="1">Inactive</option>
-                                </select>
-                            </div> -->
-                                    <!-- /Code for status dropdown -->
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-            </div>
-            </div>
-                  </div>
-              </div>
-        </qdiv>
+				<div class="container container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+							<?php
+								include "history-list.php";
+							?>
+						</div>
+					</div>
+                </div>
 
       <!-- Modal for View Table -->
       <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -310,22 +272,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    <td><a href="#"> </a></td>
-                                    
-                                    <!-- Code for status dropdown --> 
-                                    <!-- <div class="form-group">
-                                <select id="position" class="form-control">
-                                    <option value="0">Active</option>
-                                    <option value="1">Inactive</option>
-                                </select>
-                            </div> -->
-                                    <!-- /Code for status dropdown -->
-                                </tr>
+                                <?php
+									$sql = "select * from item;";
+									$result = mysqli_query($connect, $sql);
+									$queryResult = mysqli_num_rows($result);
+										
+									if($queryResult > 0){
+										while($row = mysqli_fetch_assoc($result)){
+											echo "<td>".$row['item']."</td>";
+											echo "<td>".$row['brand']."</td>";
+											echo "<td>".$row['description']."</td>";
+											echo "<td>".$row['quantity']."</td>";
+											echo "<td>".$row['unitprice']."</td>";
+										}
+									}
+								?>
                             </tbody>
                         </table>
                         </div>
